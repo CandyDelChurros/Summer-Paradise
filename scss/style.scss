@@ -1,0 +1,36 @@
+@import './variables';
+@import './base';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr 55px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background: $primary-color;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background: $second-color;
+    color:$text-color;
+    text-align: center;
+
+
+    img{
+       height: 3.3rem;
+              
+    }
+    
+}
