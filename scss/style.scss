@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 60px 1fr 55px;
+    grid-template-rows: 80px 1fr 55px;
     grid-template-areas: 
     "header"
     "main"
@@ -13,8 +13,39 @@
 }
 
 header{
+    display: flex;
     grid-area: header;
     background: $primary-color;
+
+    .h-esq{
+        width: 50%;
+        height: 100%;
+
+        img{
+            padding: 0 0 1rem 3rem;
+            width: 18rem;
+            height: 8rem;
+        }
+    }
+
+    .h-dir{
+        width: 50%;
+        height: 100%;
+        padding-right: 10rem;
+        gap: 1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        a:hover{
+            color: $text-color;
+        }
+
+     
+    }
+    
 }
 
 main{
