@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: grid;
+  height: 200vh;
+  width: 100vw;
+  margin: 0 auto;
+  grid-template-areas: "header header header" "header header header" "main main main";
+}
+
+header {
+  grid-area: header;
+}
+header .comeback {
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+}
+header .comeback button {
+  background: white;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+header .banner {
+  height: 12rem;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main {
+  grid-area: main;
+}/*# sourceMappingURL=style-pagamento.css.map */
