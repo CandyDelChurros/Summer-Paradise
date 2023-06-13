@@ -17,32 +17,41 @@
         </header>
         <main>
             <div class="viagem">
-                <div class="tittle"><h1>Dados da Viagem</h1></div>
                 <div class="local">
-                    <div class="to">
-                        <h6>Embarque</h6>
-                        <h4>Cidade 1 / Estado 1</h4>
-                        <h5>Dia, Horario</h5>
-                    </div>
-                    <div class="from">
-                        <h6>Desembarque</h6>
-                        <h4>Cidade 2 / Estado 2</h4>
-                        <h5>Dia, Horario</h5>
+                    <div class="tittle"><h1>Dados da Viagem</h1></div>
+                    <div class="info-local">
+                        <div class="to">
+                            <h6>Embarque</h6>
+                            <h4>Três Lagoas / MS</h4>
+                            <h5>22/jun, 19:30</h5>
+                        </div>
+                        <div class="from">
+                            <h6>Desembarque</h6>
+                            <h4>Angra dos Reis / RJ</h4>
+                            <h5>22/jun, 22:30</h5>
+                        </div>
                     </div>
                     <div class="bottom">
-                        <div class="b-left"><h5><i class="fa-solid fa-person-seat-reclined"></i> Semi-leito</h5></div>
-                        <div class="b-right"><link rel="stylesheet" href="#"><h2>ver intinerario</h2></div>
+                        <div class="b-left"><h5><i class="fa fa-chair"></i> Semi-leito</h5></div>
+                        <div class="b-right"><h5>Ver Intinerario</h5></div>
                     </div>
                 </div>
+                
+                            <!-- Parte Pronta -->
+        
                 <div class="passageiro">
                     <div class="tittle"><h1>Adicionar Passageiro</h1></div>
                     <div class="info">
                     <label for="input">Nome Completo </label>
                     <input type="text">
                     <label for="number">Numero do RG</label>
-                <input type="number" minlength="1" maxlength="2">
+                <input name="rg"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="9"/>
                     <label for="number">Numero do CPF</label>
-                    <input type="number">
+                    <input name="cpf"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number" maxlength="11" />
                     </div>
                 </div>
                 <div class="pagamento">
@@ -55,11 +64,17 @@
                         <label for="text">Nome do dono do cartão</label>
                         <input type="text" name="" id="">
                         <label for="number">Numero do cartão</label>
-                        <input type="number" name="" id="">
+                        <input name="rg"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="16"/>
                         <label for="number">Data do Vencimento do cartão </label>
-                        <input type="number">
+                        <input name="rg"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="6"/>
                         <label for="number">CVC</label>
-                        <input type="number">
+                        <input name="rg"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="3"/>
                     </div>
                     <button>Confirmar</button>
                 </div>
