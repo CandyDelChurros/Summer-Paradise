@@ -43,38 +43,39 @@
                     <div class="tittle"><h1>Adicionar Passageiro</h1></div>
                     <div class="info">
                     <label for="input">Nome Completo </label>
-                    <input type="text">
+                    <input type="text" placeholder="Insira o Nome Completo do Passageiro">
                     <label for="number">Numero do RG</label>
                 <input name="rg"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number" maxlength="9"/>
+                    type="number" maxlength="9" placeholder="Número do RG"/>
                     <label for="number">Numero do CPF</label>
                     <input name="cpf"
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                        type="number" maxlength="11" />
+                        type="number" maxlength="11" placeholder="Número do CPF"/>
                     </div>
                 </div>
                 <div class="pagamento">
+                    <div class="tittle"><h1>Formas de Pagamento</h1></div>
                     <div class="layout-box-pag">
                         <div class="box"></div>
                         <div class="box"></div>
                         <div class="box"></div>
                     </div>
                     <div class="card">
-                        <label for="text">Nome do dono do cartão</label>
-                        <input type="text" name="" id="">
-                        <label for="number">Numero do cartão</label>
-                        <input name="rg"
+                        <label for="text">Nome do titular</label>
+                        <input type="text" name="" id="" placeholder="Insira o nome do titular">
+                        <label for="number">Número do cartão</label>
+                        <input name="card"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number" maxlength="16"/>
-                        <label for="number">Data do Vencimento do cartão </label>
-                        <input name="rg"
+                    type="number" maxlength="16" placeholder="0000 0000 0000 0000"/>
+                        <label for="number">Valido até</label>
+                        <input name="date"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number" maxlength="6"/>
-                        <label for="number">CVC</label>
-                        <input name="rg"
+                    type="number" maxlength="6" placeholder="MM/AA"/>
+                        <label for="number">Código de segurança</label>
+                        <input name="CVV"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    type="number" maxlength="3"/>
+                    type="number" maxlength="3" placeholder="CVV"/>
                     </div>
                     <button>Confirmar</button>
                 </div>

@@ -8,7 +8,6 @@
     margin: 0 auto;
     grid-template-areas: 
     'header header header'
-    'header header header'
     'main main main';
 }
 
@@ -35,13 +34,18 @@ header {
     margin-right: 1rem;
    }
 }
-
 main {
     grid-area: main;
     .viagem {
-         border: .1rem solid black;
-        
+        border: .1rem solid red;
+        display: grid;
+        grid-template-areas: 
+         'header nav'
+         'main nav'
+        ;
+
          .local {
+            grid-area: header;
             border: .1rem solid black;
             width: 25rem;
             margin-top: 1rem;
@@ -88,7 +92,107 @@ main {
             }
         }
         .passageiro {
-                border: .1rem solid red;
+            grid-area: nav;
+                border: .1rem solid black;
+                display: flex;
+                flex-direction: column;
+                height: 20rem;
+                width: 25rem;
+                
+                .tittle{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.9rem;
+                    margin-top: 1rem;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                        margin-left: .5rem;
+                    }
+
+                    input {
+                        outline-color: red; 
+                        width: 22rem;
+                        height: 2.2rem;
+                        font-size: 1rem;
+                        margin-left: .5rem;
+                    }
+                }
         }
+        .pagamento {
+            grid-area: main;
+            display: flex;
+            border: .1rem solid black;
+            flex-direction: column;
+            width: 25rem;
+            
+            .tittle {
+                display: flex;
+                font-size: .9rem;
+                justify-content: center;
+                margin-bottom: .5rem;
+            }
+            .layout-box-pag {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: .5rem;
+                .box {
+                    border: .1rem solid black;
+                    border-radius: 4.5rem;
+                    height: 5rem;
+                    width: 5rem;
+                    background-size: 4rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .box:nth-child(1) {
+                    background-image:url(/img/pix.png);
+                }
+                .box:nth-child(2) {
+                    background-image:url(/img/boleto.png);
+                }
+                .box:nth-child(3) {
+                    background-image:url(/img/cartao.png);
+                }
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-left: .5rem;
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                }
+                
+                input {
+                    text-decoration: none;
+                    margin-left: .5rem;
+                    width: 20rem;
+                }
+                input:nth-child(6) {
+                    width: 6rem;
+                }
+                input:nth-child(8) {
+                    width: 4rem;
+                }
+            }
+
+            button {
+                margin-top: 1rem;
+                width: 10rem;
+                margin-left: 7.3rem;
+                margin-bottom: 1rem;
+            }
+        }   
+
     }
 }
