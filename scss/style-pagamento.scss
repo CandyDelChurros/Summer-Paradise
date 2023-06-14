@@ -7,8 +7,8 @@
     width: 100vw;
     margin: 0 auto;
     grid-template-areas: 
-    'header header header'
-    'main main main';
+    'header header'
+    'main main';
 }
 
 header {
@@ -25,36 +25,39 @@ header {
         }
    }
    .banner {
-    height: 12rem;
+    width: 109rem;
+    height: 20rem;
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 5rem;
+    margin-left: 40rem;
     margin-right: 1rem;
    }
 }
 main {
     grid-area: main;
     .viagem {
-        border: .1rem solid red;
         display: grid;
         grid-template-areas: 
          'header nav'
-         'main nav'
-        ;
+         'main aside'
+         'main footer';
+        justify-content: center;
 
          .local {
             grid-area: header;
             border: .1rem solid black;
-            width: 25rem;
+            border-radius: .75rem;
+            width: 35rem;
+            height: 15rem;
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
 
             .tittle{
-                font-size: 0.9rem;
+                font-size: 1.3rem;
                 margin-bottom: .3rem;
                 display: flex;
                 justify-content: center;
@@ -69,22 +72,22 @@ main {
                 border-bottom: .1rem dotted black;
 
                     h6 {
-                        font-size: .8rem;
+                        font-size: 1.3rem;
                         color: grey;
                     }
                     h4{
                         margin-top: .3rem;
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
                     h5{
                         margin-top: .3rem;
-                        font-size: .8rem;
+                        font-size: 1.3rem;
                     }
             }
             .bottom {
                 display: flex;
                 justify-content: space-between;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin-top: .5rem;
                 margin-left: 1rem;
                 margin-right: 1rem;
@@ -93,61 +96,72 @@ main {
         }
         .passageiro {
             grid-area: nav;
-                border: .1rem solid black;
+            border: .1rem solid black;
+            border-radius: .75rem;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            height: 35rem;
+            width: 30rem;
+              
+            .tittle{
+                display: flex;
+                justify-content: center;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+            }
+
+            .info {
                 display: flex;
                 flex-direction: column;
-                height: 20rem;
-                width: 25rem;
                 
-                .tittle{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 0.9rem;
-                    margin-top: 1rem;
+                label {
+                    font-size: 1.5rem;
+                    margin-top: 3rem;
+                    margin-left: 1.5rem;
                 }
 
-                .info {
-                    display: flex;
-                    flex-direction: column;
-
-                    label {
-                        font-size: 1rem;
-                        margin-top: 1rem;
-                        margin-left: .5rem;
-                    }
-
-                    input {
-                        outline-color: red; 
-                        width: 22rem;
-                        height: 2.2rem;
-                        font-size: 1rem;
-                        margin-left: .5rem;
-                    }
+                input {
+                    outline-color: red; 
+                    width: 22rem;
+                    height: 2.2rem;
+                    font-size: 1.2rem;
+                    margin-top: .5rem;
+                    margin-left: 1.5rem;
                 }
+            }
+            button {
+                margin-top: 2.5rem;
+                margin-left: 4rem;
+            }
         }
         .pagamento {
             grid-area: main;
             display: flex;
             border: .1rem solid black;
+            border-radius: .75rem;
             flex-direction: column;
-            width: 25rem;
-            
+            width: 35rem;
+            height: 43rem;
+
             .tittle {
                 display: flex;
-                font-size: .9rem;
+                font-size: 1.3rem;
                 justify-content: center;
-                margin-bottom: .5rem;
+                margin-bottom: 1.8rem;
+                margin-top: 1rem;
             }
             .layout-box-pag {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                margin-bottom: .5rem;
+                margin-bottom: 1.8rem;
+                
                 .box {
                     border: .1rem solid black;
                     border-radius: 4.5rem;
-                    height: 5rem;
-                    width: 5rem;
+                    height: 6rem;
+                    width: 6rem;
                     background-size: 4rem;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -168,31 +182,93 @@ main {
                 flex-direction: column;
 
                 label {
-                    margin-left: .5rem;
-                    margin-top: 1rem;
-                    font-size: 1rem;
+                    margin-left: 1.5rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: .5rem;
+                    font-size: 1.5rem;
                 }
                 
                 input {
                     text-decoration: none;
-                    margin-left: .5rem;
+                    margin-left: 1.5rem;
                     width: 20rem;
                 }
                 input:nth-child(6) {
                     width: 6rem;
+                    padding-left: .15rem;
                 }
                 input:nth-child(8) {
                     width: 4rem;
+                    padding-left: .22rem;
                 }
             }
 
             button {
-                margin-top: 1rem;
-                width: 10rem;
-                margin-left: 7.3rem;
+                margin-top: 2rem;
+                width: 14rem;
+                margin-left: 10rem;
                 margin-bottom: 1rem;
             }
         }   
+        .extrato {
+            border: .1rem solid black;
+            border-radius: .75rem;
+            display: flex;
+            flex-direction: column;
+            grid-area: aside;
+            width: 30rem;
+            height: 12rem;
 
+            .tittle {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                margin-top: 1rem;
+                margin-left: 1.5rem;
+                display: flex;
+            
+            }
+            .info-ex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 4rem;
+
+                .info-top {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.5rem;
+                    margin-bottom:.5rem;
+                    margin-top:.5rem;
+                    margin-left: .8rem;
+                    margin-right: .8rem;
+                }
+                .info-down {
+                    display: flex;
+                    border-top: .1rem dotted black;
+                    justify-content: space-between;
+                    font-size: 1.5rem;
+                    margin-bottom:.5rem;
+                    padding-top:.5rem;
+                    margin-left: .8rem;
+                    margin-right: .8rem;
+                }
+            }
+        }
+        .termos {
+            border: .1rem solid black;
+            border-radius: .75rem;
+            grid-area: footer;
+            width: 30rem;
+            height: 4rem;
+            font-size: 1.8rem;
+            padding-left: 1rem;
+            padding-top: .7rem;
+            padding-bottom: .5rem;
+        }
     }
+         button {
+            margin-top: 1rem;
+            margin-left: 18rem;
+            width: 20rem;
+         }
 }

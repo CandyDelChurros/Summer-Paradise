@@ -21,7 +21,7 @@ body {
   height: 200vh;
   width: 100vw;
   margin: 0 auto;
-  grid-template-areas: "header header header" "main main main";
+  grid-template-areas: "header header" "main main";
 }
 
 header {
@@ -39,12 +39,13 @@ header .comeback button {
   font-size: 1.5rem;
 }
 header .banner {
-  height: 12rem;
+  width: 109rem;
+  height: 20rem;
   background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-top: 5rem;
+  margin-left: 40rem;
   margin-right: 1rem;
 }
 
@@ -52,21 +53,23 @@ main {
   grid-area: main;
 }
 main .viagem {
-  border: 0.1rem solid red;
   display: grid;
-  grid-template-areas: "header nav" "main nav";
+  grid-template-areas: "header nav" "main aside" "main footer";
+  justify-content: center;
 }
 main .viagem .local {
   grid-area: header;
   border: 0.1rem solid black;
-  width: 25rem;
+  border-radius: 0.75rem;
+  width: 35rem;
+  height: 15rem;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 main .viagem .local .tittle {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-bottom: 0.3rem;
   display: flex;
   justify-content: center;
@@ -80,21 +83,21 @@ main .viagem .local .info-local {
   border-bottom: 0.1rem dotted black;
 }
 main .viagem .local .info-local h6 {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   color: grey;
 }
 main .viagem .local .info-local h4 {
   margin-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 main .viagem .local .info-local h5 {
   margin-top: 0.3rem;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 main .viagem .local .bottom {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -103,15 +106,17 @@ main .viagem .local .bottom {
 main .viagem .passageiro {
   grid-area: nav;
   border: 0.1rem solid black;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  height: 20rem;
-  width: 25rem;
+  height: 35rem;
+  width: 30rem;
 }
 main .viagem .passageiro .tittle {
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 main .viagem .passageiro .info {
@@ -119,41 +124,49 @@ main .viagem .passageiro .info {
   flex-direction: column;
 }
 main .viagem .passageiro .info label {
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
 }
 main .viagem .passageiro .info input {
   outline-color: red;
   width: 22rem;
   height: 2.2rem;
-  font-size: 1rem;
-  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+main .viagem .passageiro button {
+  margin-top: 2.5rem;
+  margin-left: 4rem;
 }
 main .viagem .pagamento {
   grid-area: main;
   display: flex;
   border: 0.1rem solid black;
+  border-radius: 0.75rem;
   flex-direction: column;
-  width: 25rem;
+  width: 35rem;
+  height: 43rem;
 }
 main .viagem .pagamento .tittle {
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
 }
 main .viagem .pagamento .layout-box-pag {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.8rem;
 }
 main .viagem .pagamento .layout-box-pag .box {
   border: 0.1rem solid black;
   border-radius: 4.5rem;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   background-size: 4rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -172,24 +185,84 @@ main .viagem .pagamento .card {
   flex-direction: column;
 }
 main .viagem .pagamento .card label {
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 main .viagem .pagamento .card input {
   text-decoration: none;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
   width: 20rem;
 }
 main .viagem .pagamento .card input:nth-child(6) {
   width: 6rem;
+  padding-left: 0.15rem;
 }
 main .viagem .pagamento .card input:nth-child(8) {
   width: 4rem;
+  padding-left: 0.22rem;
 }
 main .viagem .pagamento button {
-  margin-top: 1rem;
-  width: 10rem;
-  margin-left: 7.3rem;
+  margin-top: 2rem;
+  width: 14rem;
+  margin-left: 10rem;
   margin-bottom: 1rem;
+}
+main .viagem .extrato {
+  border: 0.1rem solid black;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+  width: 30rem;
+  height: 12rem;
+}
+main .viagem .extrato .tittle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+}
+main .viagem .extrato .info-ex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4rem;
+}
+main .viagem .extrato .info-ex .info-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+main .viagem .extrato .info-ex .info-down {
+  display: flex;
+  border-top: 0.1rem dotted black;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+main .viagem .termos {
+  border: 0.1rem solid black;
+  border-radius: 0.75rem;
+  grid-area: footer;
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+main button {
+  margin-top: 1rem;
+  margin-left: 18rem;
+  width: 20rem;
 }/*# sourceMappingURL=style-pagamento.css.map */
