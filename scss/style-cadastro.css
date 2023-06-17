@@ -21,7 +21,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0 auto;
-  grid-template-rows: 7rem 48rem 5rem;
+  grid-template-rows: 5rem 48rem 5rem;
   grid-template-areas: "header" "main" "footer";
   gap: 2rem;
 }
@@ -63,26 +63,32 @@ body {
 }
 .container main .main-top .box {
   display: flex;
-  border: 0.1rem solid black;
   border-radius: 5rem;
   width: 7rem;
   height: 7rem;
 }
 .container main .main-top .box:nth-child(1) {
   background: url(../img/fb_icon_325x325.png);
-  background-size: cover;
+  background-size: 7rem;
+  background-position: -0.1rem;
 }
 .container main .main-top .box:nth-child(2) {
   background: url(../img/Google.png);
-  background-size: cover;
+  background-size: 7rem;
+  background-position: -0.1rem;
 }
 .container main .main-top .box:nth-child(3) {
   background: url(../img/outlook.png);
-  background-size: cover;
+  background-size: 6.5rem;
+  background-position: -0.2rem;
+  background-repeat: no-repeat;
 }
 .container main .main-top .box:nth-child(4) {
   background: url(../img/Logo_of_Twitter.svg.png);
-  background-size: cover;
+  background-size: 5.8rem;
+  background-position-y: 1.2rem;
+  background-position-x: 0.49rem;
+  background-repeat: no-repeat;
 }
 .container main .tittle-center {
   grid-area: aside;
@@ -116,6 +122,6 @@ body {
   border-radius: 1rem;
 }
 .container footer .foot h3 {
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-size: 1.5rem;
 }/*# sourceMappingURL=style-cadastro.css.map */
