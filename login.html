@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="scss/style-login.css">
     <title>Login</title>
 </head>
 
@@ -16,28 +17,32 @@
         <header>
             <div class="top">
                 <div class="top-left">
-                    <button><i class="fa-solid fa-arrow-left"></i>Voltar</button>
+                    <button><i class="fa-solid fa-less-than"></i>Voltar</button>
                 </div>
                 <div class="top-right">
-                    <button><i class="fa-solid fa-arrow-left"></i>Quero me Cadastrar</button>
+                    <button><a href="cadastro.html"><i class="fa-solid fa-less-than"></i>Quero me Cadastrar</a></button>
                 </div>
             </div>
         </header>
         <main>
+            <div class="tittle"><h2>Facilite seu login</h2></div>
             <div class="main-top">
                 <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
             </div>
+            <div class="tittle-center"><h2>OU</h2></div>
             <div class="main-center">
-                <input type="text">
-                <input type="text">
-            </div>
-            <div class="main-foot">
-                <button>Entrar</button>
+                <input type="text" placeholder="Insira o email">
+                <input type="password" placeholder="Insira sua senha">
             </div>
         </main>
+        <footer>
+            <div class="foot">
+                <button>Entrar</button>
+            </div>
+        </footer>
     </div>
 </body>
 
