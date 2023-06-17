@@ -28,16 +28,16 @@ body {
 header {
   grid-area: header;
 }
-header .comeback {
-  margin-top: 0.8rem;
-  margin-left: 0.8rem;
+header .header .comeback {
+  margin-top: 1.8rem;
+  margin-left: 1.8rem;
 }
-header .comeback button {
+header .header .comeback button {
   background: white;
   outline: none;
   border: none;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 nav .banner {
@@ -51,6 +51,7 @@ nav .banner .background {
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
+  box-shadow: rgb(122, 122, 122) 2rem0 4px 31px -18px;
 }
 
 main {

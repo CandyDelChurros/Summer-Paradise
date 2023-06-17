@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/style-cadastro.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -29,16 +30,18 @@
                 <div class="box"></div>
             </div>
             <div class="main-center">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </div>
-            <div class="main-foot">
-                <h3>Ao clicar no confirmar, aceito os termos de uso do site e concordo com todas as politicas do site</h3>
-                <button>Confirmar</button>
+                <input type="text" name="Nome" placeholder="Insira seu nome de usuario">
+                <input type="text" name="Email" placeholder="Coloque seu Email">
+                <input type="password" name="Senha" placeholder="Insira uma senha, no minimo 5 digitos">
+                <input type="password" name="Confirme" placeholder="Confirme sua senha">
             </div>
         </main>
+        <footer>
+        <div class="foot">
+            <h3>Ao clicar no confirmar, aceito os termos de uso do site e concordo com todas as politicas do site</h3>
+            <button>Confirmar</button>
+        </div>
+        </footer>
     </div>
 </body>
 </html>

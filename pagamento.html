@@ -12,7 +12,9 @@
 <body>
     <div class="container">
         <header>
+            <div class="header">
             <div class="comeback"><button><i class="fa-solid fa-less-than"></i>  Voltar</button></div>
+            </div>
         </header>
         <nav>
             <div class="banner">
@@ -47,17 +49,17 @@
                     <div class="tittle"><h1>Adicionar Passageiro</h1></div>
                     <div class="info">
                     <label for="input">Nome Completo </label>
-                    <input type="text" placeholder="Insira o Nome Completo do Passageiro">
+                    <input type="text" maxlength="2" placeholder="Insira o Nome Completo do Passageiro">
                     <label for="number">Numero do RG</label>
-                <input name="rg"
+                    <input name="rg"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                     type="number" maxlength="9" placeholder="Número do RG"/>
                     <label for="number">Numero do CPF</label>
                     <input name="cpf"
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                        type="number" maxlength="11" placeholder="Número do CPF"/>
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="11" placeholder="Número do CPF"/>
                     </div>
-                <button>Confirmar Passageiro</button>
+                    <button>Confirmar Passageiro</button>
                 </div>
                 <div class="pagamento">
                     <div class="tittle"><h1>Formas de Pagamento</h1></div>
