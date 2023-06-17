@@ -2,11 +2,7 @@
 @import './base';
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    display: grid;
-    background: $bg-color;
+    @include container;
     grid-template-rows: 80px 1fr 100px;
     grid-template-areas: 
     "header"
@@ -14,7 +10,7 @@
     "footer";
 }
 
-header{
+.header{
     display: flex;
     grid-area: header;
     background: $primary-color;
@@ -49,7 +45,7 @@ header{
     
 }
 
-main{
+.main{
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -127,15 +123,13 @@ main{
             font-size: 2.5rem;
             padding-left: 3rem;
             color:#DEDEDE;
-            
         }
 
         input{
                 width: 100%;
                 height: 5rem;
-                border: none;
                 outline: none;
-                
+                border-radius: 50px;
         }
     }
     .tabela{
@@ -183,6 +177,10 @@ main{
                 th, td{
                     text-align: start;
                     padding: 0.5rem;
+
+                    &:nth-child(2){
+                        text-align: right;
+                    }
                 }
             }
         &:nth-child(3){
@@ -217,7 +215,7 @@ main{
     }
 }
 
-footer{
+.footer{
     grid-area: footer;
     background: $second-color;
     display: flex;
@@ -266,6 +264,21 @@ footer{
         a{
             font-size: 2.5rem;
             padding-right: 1rem;
+
+            .bxl-facebook-square{
+                color:#1877f2;
+            }
+
+            .bxl-twitter{
+                color: #1da1f2;
+            }
+
+            .bxl-youtube{
+                color:#c4302b;
+            }
+            .bxl-instagram{
+                color:#e35a91;
+            }
         }
 
         span{
@@ -275,12 +288,8 @@ footer{
             color: $text-color;
 
         }
-
-        img{
-            position: absolute;
-            bottom: .5rem;
-            width: 18rem;
-            
-        }
     }
 }
+
+
+@import './perfil';

@@ -2,3 +2,11 @@ $primary-color:#2FB1BD;
 $second-color:#0F393D;
 $text-color:#ffff;
 $bg-color:#E8EEF0;
+
+@mixin container {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: grid;
+    background: $bg-color;
+}

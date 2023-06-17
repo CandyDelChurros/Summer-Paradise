@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   list-style: none;
+  border: none;
 }
 
 html {
@@ -26,21 +27,21 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
-header {
+.header {
   display: flex;
   grid-area: header;
   background: #2FB1BD;
 }
-header .h-esq {
+.header .h-esq {
   width: 50%;
   height: 100%;
 }
-header .h-esq img {
+.header .h-esq img {
   padding: 0 0 1rem 3rem;
   width: 15rem;
   height: 8rem;
 }
-header .h-dir {
+.header .h-dir {
   width: 50%;
   height: 100%;
   padding-right: 10rem;
@@ -50,73 +51,73 @@ header .h-dir {
   align-items: center;
   justify-content: flex-end;
 }
-header .h-dir a:hover {
+.header .h-dir a:hover {
   color: white;
 }
 
-main {
+.main {
   grid-area: main;
   display: flex;
   flex-direction: column;
 }
-main .banner {
+.main .banner {
   width: 100%;
   height: 30rem;
   margin-top: 3rem;
   background-image: url(../img/banner.jpg);
   background-size: cover;
 }
-main h2 {
+.main h2 {
   margin: 5rem;
   font-size: 3.5rem;
 }
-main .explorar {
+.main .explorar {
   width: 100%;
   height: 30rem;
   display: flex;
   justify-content: space-evenly;
 }
-main .explorar .box1,
-main .explorar .box2,
-main .explorar .box3,
-main .explorar .box4 {
+.main .explorar .box1,
+.main .explorar .box2,
+.main .explorar .box3,
+.main .explorar .box4 {
   border-radius: 10px;
   background: white;
   width: 35rem;
   box-shadow: 2px 1px 2px #DEDEDE;
 }
-main .explorar .box1 img,
-main .explorar .box2 img,
-main .explorar .box3 img,
-main .explorar .box4 img {
+.main .explorar .box1 img,
+.main .explorar .box2 img,
+.main .explorar .box3 img,
+.main .explorar .box4 img {
   width: 35rem;
   height: 22rem;
   border-radius: 10px;
 }
-main .explorar .box1 h3,
-main .explorar .box2 h3,
-main .explorar .box3 h3,
-main .explorar .box4 h3 {
+.main .explorar .box1 h3,
+.main .explorar .box2 h3,
+.main .explorar .box3 h3,
+.main .explorar .box4 h3 {
   padding: 1rem 0 0 1rem;
   color: #0F393D;
   font-size: 2.3rem;
 }
-main .explorar .box1 span,
-main .explorar .box2 span,
-main .explorar .box3 span,
-main .explorar .box4 span {
+.main .explorar .box1 span,
+.main .explorar .box2 span,
+.main .explorar .box3 span,
+.main .explorar .box4 span {
   display: flex;
   padding: 1rem;
   font-weight: lighter;
 }
-main .explorar .box1:hover,
-main .explorar .box2:hover,
-main .explorar .box3:hover,
-main .explorar .box4:hover {
+.main .explorar .box1:hover,
+.main .explorar .box2:hover,
+.main .explorar .box3:hover,
+.main .explorar .box4:hover {
   cursor: pointer;
   box-shadow: 2px 5px 3px #DEDEDE;
 }
-main .search {
+.main .search {
   width: 100%;
   height: 7rem;
   margin-top: 5rem;
@@ -124,7 +125,7 @@ main .search {
   align-items: center;
   justify-content: center;
 }
-main .search div {
+.main .search div {
   width: 70%;
   background: white;
   border-radius: 50px;
@@ -132,36 +133,36 @@ main .search div {
   align-items: center;
   gap: 0.5rem;
 }
-main .search i {
+.main .search i {
   font-size: 2.5rem;
   padding-left: 3rem;
   color: #DEDEDE;
 }
-main .search input {
+.main .search input {
   width: 100%;
   height: 5rem;
-  border: none;
   outline: none;
+  border-radius: 50px;
 }
-main .tabela {
+.main .tabela {
   width: 100%;
   height: 37rem;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5rem;
 }
-main .tabela div {
+.main .tabela div {
   width: 34rem;
   height: 100%;
   background: white;
   border-radius: 10px;
 }
-main .tabela div .img {
+.main .tabela div .img {
   height: 21rem;
   width: 100%;
   position: relative;
 }
-main .tabela div .img::before {
+.main .tabela div .img::before {
   content: "Maragogi-al";
   position: absolute;
   font-weight: 900;
@@ -172,20 +173,23 @@ main .tabela div .img::before {
   left: 2rem;
   bottom: 0.1rem;
 }
-main .tabela div .img img {
+.main .tabela div .img img {
   width: 100%;
   height: 21rem;
   border-radius: 10px;
 }
-main .tabela div table {
+.main .tabela div table {
   width: 100%;
   padding: 1rem 2rem;
 }
-main .tabela div table th, main .tabela div table td {
+.main .tabela div table th, .main .tabela div table td {
   text-align: start;
   padding: 0.5rem;
 }
-main .tabela div:nth-child(3) .img::before {
+.main .tabela div table th:nth-child(2), .main .tabela div table td:nth-child(2) {
+  text-align: right;
+}
+.main .tabela div:nth-child(3) .img::before {
   content: "Beto Carreiro World-sc";
   position: absolute;
   font-weight: 900;
@@ -196,7 +200,7 @@ main .tabela div:nth-child(3) .img::before {
   left: 2rem;
   bottom: 0.1rem;
 }
-main .tabela div:nth-child(2) .img::before {
+.main .tabela div:nth-child(2) .img::before {
   content: "Gramado-rs";
   position: absolute;
   font-weight: 900;
@@ -208,13 +212,13 @@ main .tabela div:nth-child(2) .img::before {
   bottom: 0.1rem;
 }
 
-footer {
+.footer {
   grid-area: footer;
   background: #0F393D;
   display: flex;
   position: relative;
 }
-footer .f-esq {
+.footer .f-esq {
   width: 20rem;
   height: 100%;
   display: flex;
@@ -222,23 +226,23 @@ footer .f-esq {
   justify-content: center;
   align-items: center;
 }
-footer .f-esq img:nth-child(2) {
+.footer .f-esq img:nth-child(2) {
   height: 4rem;
 }
-footer .f-esq img:nth-child(1) {
+.footer .f-esq img:nth-child(1) {
   width: 7rem;
 }
-footer .escrita {
+.footer .escrita {
   width: 70rem;
   display: flex;
   align-items: center;
 }
-footer .escrita h6 {
+.footer .escrita h6 {
   font-weight: lighter;
   color: white;
   padding-left: 5rem;
 }
-footer .redes-sociais {
+.footer .redes-sociais {
   width: 60rem;
   height: 10rem;
   display: flex;
@@ -247,18 +251,254 @@ footer .redes-sociais {
   position: relative;
   padding-right: 1rem;
 }
-footer .redes-sociais a {
+.footer .redes-sociais a {
   font-size: 2.5rem;
   padding-right: 1rem;
 }
-footer .redes-sociais span {
+.footer .redes-sociais a .bxl-facebook-square {
+  color: #1877f2;
+}
+.footer .redes-sociais a .bxl-twitter {
+  color: #1da1f2;
+}
+.footer .redes-sociais a .bxl-youtube {
+  color: #c4302b;
+}
+.footer .redes-sociais a .bxl-instagram {
+  color: #e35a91;
+}
+.footer .redes-sociais span {
   position: absolute;
   top: 1rem;
   right: 1rem;
   color: white;
 }
-footer .redes-sociais img {
+
+.container-perfil {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: grid;
+  background: #E8EEF0;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "aside main" "aside main";
+}
+
+.aside-perfil {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 3px 1px 1px #DEDEDE;
+}
+.aside-perfil .box1 {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.aside-perfil .box1 i {
+  font-size: 15rem;
+  border-radius: 50px;
+}
+.aside-perfil .box1 h2 {
+  font-size: 2rem;
+}
+.aside-perfil .box2 {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+.aside-perfil .box2 a {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aside-perfil .box2 a:hover {
+  color: #2FB1BD;
+  font-weight: bold;
+}
+.aside-perfil .box2 i {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.aside-perfil .box3 {
+  height: 12rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.aside-perfil .box3 a {
+  font-size: 1.6rem;
+  color: #000000;
+  text-transform: uppercase;
+}
+.aside-perfil .box3 a:hover {
+  color: #2FB1BD;
+  font-weight: bold;
+}
+.aside-perfil .box3 a i {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.main-perfil {
+  grid-area: main;
+  display: flex;
+}
+.main-perfil .m-esq {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+.main-perfil .m-esq h2 {
+  padding: 7rem 0 0 5rem;
+}
+.main-perfil .m-esq .box {
+  width: 100%;
+  height: 4rem;
+  margin-left: 7rem;
+  background: rgba(17, 16, 16, 0.9725490196);
+}
+.main-perfil .m-esq .box table {
+  font-size: 1.5rem;
+  width: 98%;
+  padding-left: 2rem;
+}
+.main-perfil .m-esq .box table th, .main-perfil .m-esq .box table td {
+  text-align: start;
+}
+.main-perfil .m-esq .box table th:nth-child(2), .main-perfil .m-esq .box table td:nth-child(2) {
+  text-align: end;
+}
+.main-perfil .m-esq .box i {
+  color: #F6DBBF;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.main-perfil .m-esq .box .fa-solid {
+  color: #FF3131;
+}
+.main-perfil .m-esq .box a {
+  color: white;
+  padding-left: 0.3rem;
+}
+.main-perfil .m-esq .box span {
+  float: right;
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+  color: red;
+  font-weight: bold;
+}
+.main-perfil .m-esq .box div {
+  display: none;
+}
+.main-perfil .m-esq .box div:target {
+  display: block;
+}
+.main-perfil .m-esq .box #box1,
+.main-perfil .m-esq .box #box2,
+.main-perfil .m-esq .box #box3,
+.main-perfil .m-esq .box #box4 {
+  background: white;
+  width: 100%;
+  height: 7rem;
+  border: 0.2rem solid black;
+}
+.main-perfil .m-dir {
+  height: 100%;
+  width: 50%;
+  padding: 3rem 3rem 0 3rem;
+}
+.main-perfil .m-dir .button {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-perfil .m-dir .button button {
+  cursor: pointer;
+  background: #919191;
+  height: 4rem;
+  width: 8rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.main-perfil .m-dir p {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 5rem 2rem 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.main-perfil .m-dir .detalhes {
+  width: 100%;
+  height: 57rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main-perfil .m-dir .detalhes .img {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+.main-perfil .m-dir .detalhes .img img {
   position: absolute;
-  bottom: 0.5rem;
-  width: 18rem;
+  right: 5rem;
+  width: 45rem;
+  height: 30rem;
+  border-radius: 5px;
+}
+.main-perfil .m-dir .detalhes .info {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 0 0 10rem;
+  gap: 2rem;
+}
+.main-perfil .m-dir .detalhes .info h4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main-perfil .m-dir .detalhes .info table {
+  width: 45rem;
+  height: 10rem;
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 1px 1px 1px #DEDEDE;
+}
+.main-perfil .m-dir .detalhes .info table th,
+.main-perfil .m-dir .detalhes .info table td {
+  text-align: start;
+  padding-top: 1rem;
+}
+.main-perfil .m-dir .detalhes .info table th:nth-child(2),
+.main-perfil .m-dir .detalhes .info table td:nth-child(2) {
+  text-align: end;
+}
+.main-perfil .m-dir .detalhes .info table tr:nth-child(2) td {
+  padding-bottom: 1.5rem;
+}
+.main-perfil .m-dir .detalhes .info table tr:nth-child(3) td {
+  border-top: 0.2rem dashed #bfbfbf;
+  padding-bottom: 1rem;
+}
+.main-perfil .m-dir .detalhes .info table td {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
