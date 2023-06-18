@@ -3,6 +3,7 @@
 
 .container {
     @include container;
+    display:grid;
     grid-template-rows: 80px 1fr 100px;
     grid-template-areas: 
     "header"
@@ -293,3 +294,4 @@
 
 
 @import './perfil';
+@import './pos';

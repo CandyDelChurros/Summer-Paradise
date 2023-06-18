@@ -1,0 +1,186 @@
+
+.container-pos{
+    @include container;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #000, #3533cd);
+    position: relative;
+}    
+
+#button {
+    z-index: 1;
+    height: 4rem;
+    width: 10rem;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+
+    button {
+        background: #919191;
+        height: 4rem;
+        width: 10rem;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 1px  1px 1px #DEDEDE;
+
+        &:hover {
+            background:white;
+            cursor: pointer;
+            color:#DBA5A9;
+        }
+    }
+}
+.nuvens {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nuvem {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url('../img/nuvem.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: mover 900s linear infinite;
+}
+.nuvem-dir{
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        background-image: url('../img/nuvem.png');
+        background-repeat: repeat-x;
+        background-size: cover;
+        animation: mover-dir 900s linear infinite;
+}
+
+.nuvem:nth-child(1) {
+    left: -35rem;
+    top:-22rem;
+
+}
+
+.nuvem:nth-child(2) {
+    left:-42rem;
+    top:-10rem;
+}
+
+.nuvem:nth-child(3) {
+    left:-32rem;
+    top:1rem;
+}
+.nuvem:nth-child(4) {
+    bottom: -10rem;
+    left: -50rem;
+    height: 95%;
+    width: 95%;
+}
+.nuvem:nth-child(5) {
+    bottom: -1rem;
+}
+.nuvem:nth-child(6) {
+    right: -35rem;
+    top:-18rem;
+}
+.nuvem:nth-child(7) {
+    right: -10rem;
+    top:-13rem;
+}
+.nuvem-dir:nth-child(1){
+    right: 20rem;
+    top:-7rem;
+}
+.nuvem-dir:nth-child(2) {
+    right: -5rem;
+}
+.nuvem-dir:nth-child(3) {
+    right: -33rem;
+    top:-3rem;
+}
+.nuvem-dir:nth-child(4) {
+    left: -3rem;
+    top:-3rem;
+}
+.nuvem-dir:nth-child(5) {
+    left: -10rem;
+    top:-15rem;
+}
+.nuvem-dir:nth-child(6) {
+    left: 30rem;
+    top:-25rem;
+}
+.nuvem-dir:nth-child(7) {
+    left: 20rem;
+    top:-15rem;
+    
+}
+.aviao img{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 40%;
+    animation: voar 10s linear infinite;
+}
+
+.faixa {
+    position: absolute;
+    left: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 10rem;
+    font-size: 3rem;
+    text-align: center;
+    animation: aparecer 10s linear infinite;
+    animation-delay: 3s;
+    color:#DBA5A9;
+
+    img{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+@keyframes mover-dir {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(1000%);
+    }
+}
+
+@keyframes voar {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: calc(100% + 100px);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        left: -500px;
+    }
+
+    100% {
+        left: calc(100% + 200px);
+    }
+}
