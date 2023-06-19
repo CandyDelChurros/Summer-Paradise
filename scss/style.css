@@ -35,11 +35,21 @@ body {
 .header .h-esq {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .h-esq i {
+  font-size: 3rem;
+  color: #0F393D;
+  padding-left: 5rem;
+}
+.header .h-esq i:hover {
+  color: white;
 }
 .header .h-esq img {
-  padding: 0 0 1rem 3rem;
-  width: 15rem;
-  height: 8rem;
+  width: 12rem;
+  height: 6rem;
 }
 .header .h-dir {
   width: 50%;
@@ -50,9 +60,99 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: #0F393D;
+}
+.header .h-dir a {
+  color: #0F393D;
 }
 .header .h-dir a:hover {
   color: white;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-left: 4rem;
+}
+.nav:target {
+  display: block;
+}
+.nav .nav-box {
+  background: rgba(0, 0, 0, 0.5);
+  width: 80vw;
+  height: 32rem;
+  display: flex;
+  flex-direction: row;
+}
+.nav .nav-box .nav-dir {
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 8rem 0 0 5rem;
+}
+.nav .nav-box .nav-dir .close {
+  position: absolute;
+  left: 1.1rem;
+  top: 2.5rem;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  color: white;
+  border: 0.5rem solid white;
+}
+.nav .nav-box .nav-dir .close:hover {
+  color: #000;
+  border: 0.5rem solid #000;
+}
+.nav .nav-box .nav-dir h3 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 3rem;
+  color: white;
+}
+.nav .nav-box .nav-dir .menu-open {
+  width: 13rem;
+  height: 11rem;
+  background: #0F393D;
+  display: flex;
+  border-radius: 10px;
+}
+.nav .nav-box .nav-dir .menu-open:hover {
+  background: #F6A0A2;
+}
+.nav .nav-box .nav-dir .menu-open i {
+  font-size: 3rem;
+}
+.nav .nav-box .nav-dir .menu-open a {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.nav .nav-box .nav-esq {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+  padding: 5rem 5rem 0 0;
+}
+.nav .nav-box .nav-esq h3 {
+  font-size: 2.3rem;
+  color: white;
+  text-align: end;
+}
+.nav .nav-box .nav-esq a {
+  color: white;
+}
+.nav .nav-box .nav-esq a:hover {
+  color: #F6A0A2;
 }
 
 .main {
@@ -156,6 +256,7 @@ body {
   height: 100%;
   background: white;
   border-radius: 10px;
+  box-shadow: 2px 1px 2px #DEDEDE;
 }
 .main .tabela div .img {
   height: 21rem;
@@ -284,6 +385,10 @@ body {
   grid-template-areas: "aside main" "aside main";
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .aside-perfil {
   grid-area: aside;
   display: flex;
@@ -324,7 +429,7 @@ body {
   justify-content: center;
 }
 .aside-perfil .box2 a:hover {
-  color: #2FB1BD;
+  color: #0F393D;
   font-weight: bold;
 }
 .aside-perfil .box2 i {
@@ -344,7 +449,7 @@ body {
   text-transform: uppercase;
 }
 .aside-perfil .box3 a:hover {
-  color: #2FB1BD;
+  color: #0F393D;
   font-weight: bold;
 }
 .aside-perfil .box3 a i {
@@ -368,9 +473,9 @@ body {
   padding: 7rem 0 0 5rem;
 }
 .main-perfil .m-esq .box {
-  width: 100%;
+  width: 80%;
   height: 4rem;
-  margin-left: 7rem;
+  margin-left: 6rem;
   background: rgba(17, 16, 16, 0.9725490196);
 }
 .main-perfil .m-esq .box table {
@@ -421,6 +526,7 @@ body {
 .main-perfil .m-dir {
   height: 100%;
   width: 50%;
+  align-items: flex-end;
   padding: 3rem 3rem 0 3rem;
 }
 .main-perfil .m-dir .button {
@@ -446,18 +552,15 @@ body {
   width: 100%;
   height: 57rem;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-end;
 }
 .main-perfil .m-dir .detalhes .img {
-  width: 100%;
+  width: 80%;
   height: 30rem;
-  position: relative;
 }
 .main-perfil .m-dir .detalhes .img img {
-  position: absolute;
-  right: 5rem;
-  width: 45rem;
+  width: 100%;
   height: 30rem;
   border-radius: 5px;
 }
@@ -466,8 +569,8 @@ body {
   height: 25rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 2rem 0 0 10rem;
+  align-items: flex-end;
+  padding: 2rem 0 0 0;
   gap: 2rem;
 }
 .main-perfil .m-dir .detalhes .info h4 {
@@ -476,7 +579,7 @@ body {
   justify-content: flex-start;
 }
 .main-perfil .m-dir .detalhes .info table {
-  width: 45rem;
+  width: 80%;
   height: 10rem;
   padding: 0 1rem;
   background-color: white;
@@ -503,6 +606,139 @@ body {
   font-size: 1.3rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .container-perfil {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  .aside-perfil {
+    display: none;
+  }
+  .main-perfil {
+    position: relative;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .main-perfil .m-esq {
+    width: 100%;
+    height: 50%;
+    align-items: flex-start;
+  }
+  .main-perfil .m-esq h2 {
+    padding-top: 10rem;
+  }
+  .main-perfil .m-esq .box {
+    margin-left: 1rem;
+    width: 90%;
+  }
+  .main-perfil .m-dir {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .main-perfil .m-dir .button {
+    position: absolute;
+    top: 1rem;
+  }
+  .main-perfil .m-dir .detalhes {
+    width: 100%;
+  }
+  .main-perfil .m-dir .detalhes .img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .main-perfil .m-dir .detalhes .img img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .main-perfil .m-dir .detalhes .info {
+    width: 100%;
+    height: 30rem;
+    padding: 0.5rem;
+  }
+  .main-perfil .m-dir .detalhes .info h4 {
+    padding-top: 2rem;
+  }
+  .main-perfil .m-dir .detalhes .info table {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 950px) {
+  .container-perfil {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  .aside-perfil {
+    display: none;
+  }
+  .main-perfil {
+    width: 100%;
+  }
+  .main-perfil .m-esq {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+  }
+  .main-perfil .m-esq .box {
+    margin-left: 1rem;
+    width: 90%;
+  }
+  .main-perfil .m-esq .box table {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+  .main-perfil .m-dir {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-end;
+  }
+  .main-perfil .m-dir .detalhes {
+    width: 100%;
+    align-items: flex-end;
+  }
+  .main-perfil .m-dir .detalhes .img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .main-perfil .m-dir .detalhes .img img {
+    width: 30rem;
+    height: 25rem;
+  }
+  .main-perfil .m-dir .detalhes .info {
+    width: 100%;
+    height: 30rem;
+    align-items: flex-end;
+    padding: 0.5rem;
+  }
+  .main-perfil .m-dir .detalhes .info h4 {
+    padding-top: 1rem;
+  }
+  .main-perfil .m-dir .detalhes .info table {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .menu-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #2FB1BD;
+    z-index: 999;
+  }
+  .menu-mobile a {
+    color: white;
+  }
+}
 .container-pos {
   width: 100vw;
   height: 100vh;
