@@ -184,3 +184,11 @@
         left: calc(100% + 200px);
     }
 }
+@media (max-width:800px) {
+    .nuvens{
+    display: none;
+    }   
+    .faixa{
+        animation-delay: 4s;
+    }
+}

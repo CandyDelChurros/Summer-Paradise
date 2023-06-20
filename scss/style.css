@@ -401,23 +401,23 @@ body {
     gap: 1rem;
   }
   .main-index .explorar .box1,
-.main-index .explorar .box2,
-.main-index .explorar .box3,
-.main-index .explorar .box4 {
+  .main-index .explorar .box2,
+  .main-index .explorar .box3,
+  .main-index .explorar .box4 {
     width: 20rem;
     height: 20rem;
   }
   .main-index .explorar .box1 img,
-.main-index .explorar .box2 img,
-.main-index .explorar .box3 img,
-.main-index .explorar .box4 img {
+  .main-index .explorar .box2 img,
+  .main-index .explorar .box3 img,
+  .main-index .explorar .box4 img {
     width: 100%;
     height: 13rem;
   }
   .main-index .explorar .box1 h3,
-.main-index .explorar .box2 h3,
-.main-index .explorar .box3 h3,
-.main-index .explorar .box4 h3 {
+  .main-index .explorar .box2 h3,
+  .main-index .explorar .box3 h3,
+  .main-index .explorar .box4 h3 {
     font-size: 2rem;
     padding: 0.5rem 0 0 1rem;
   }
@@ -500,9 +500,9 @@ body {
     gap: 1rem;
   }
   .main-index .explorar .box1,
-.main-index .explorar .box2,
-.main-index .explorar .box3,
-.main-index .explorar .box4 {
+  .main-index .explorar .box2,
+  .main-index .explorar .box3,
+  .main-index .explorar .box4 {
     height: 35rem;
   }
   .tabela {
@@ -969,8 +969,7 @@ body {
   background-image: url("../img/nuvem.png");
   background-repeat: repeat-x;
   background-size: cover;
-  -webkit-animation: mover 900s linear infinite;
-          animation: mover 900s linear infinite;
+  animation: mover 900s linear infinite;
 }
 
 .nuvem-dir {
@@ -980,8 +979,7 @@ body {
   background-image: url("../img/nuvem.png");
   background-repeat: repeat-x;
   background-size: cover;
-  -webkit-animation: mover-dir 900s linear infinite;
-          animation: mover-dir 900s linear infinite;
+  animation: mover-dir 900s linear infinite;
 }
 
 .nuvem:nth-child(1) {
@@ -1061,8 +1059,7 @@ body {
   transform: translateY(-50%);
   width: 40%;
   height: 40%;
-  -webkit-animation: voar 10s linear infinite;
-          animation: voar 10s linear infinite;
+  animation: voar 10s linear infinite;
 }
 
 .faixa {
@@ -1074,24 +1071,13 @@ body {
   height: 10rem;
   font-size: 3rem;
   text-align: center;
-  -webkit-animation: aparecer 10s linear infinite;
-          animation: aparecer 10s linear infinite;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: aparecer 10s linear infinite;
+  animation-delay: 3s;
   color: #DBA5A9;
 }
 .faixa img {
   width: 5rem;
   height: 5rem;
-}
-
-@-webkit-keyframes mover {
-  0% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateX(-1000%);
-  }
 }
 
 @keyframes mover {
@@ -1102,28 +1088,12 @@ body {
     transform: translateX(-1000%);
   }
 }
-@-webkit-keyframes mover-dir {
-  0% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: translateX(1000%);
-  }
-}
 @keyframes mover-dir {
   0% {
     transform: translateX(-100px);
   }
   100% {
     transform: translateX(1000%);
-  }
-}
-@-webkit-keyframes voar {
-  0% {
-    left: -1000px;
-  }
-  100% {
-    left: calc(100% + 100px);
   }
 }
 @keyframes voar {
@@ -1134,14 +1104,6 @@ body {
     left: calc(100% + 100px);
   }
 }
-@-webkit-keyframes aparecer {
-  0% {
-    left: -500px;
-  }
-  100% {
-    left: calc(100% + 200px);
-  }
-}
 @keyframes aparecer {
   0% {
     left: -500px;
@@ -1150,4 +1112,11 @@ body {
     left: calc(100% + 200px);
   }
 }
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 800px) {
+  .nuvens {
+    display: none;
+  }
+  .faixa {
+    animation-delay: 4s;
+  }
+}/*# sourceMappingURL=style.css.map */
