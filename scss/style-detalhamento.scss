@@ -6,4 +6,104 @@
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
+
+    header {
+        // grid-area: ;
+        .header {
+            border: .1rem solid black;
+            display: flex;
+            justify-content: space-between;
+            .icon {
+                display: flex;
+                background:url(../img/Design\ sem\ nome\ \(27\).png);
+                width: 10rem;
+                height: 10rem;
+                background-repeat: no-repeat;
+            }
+            .accout {
+                display: flex;
+                border: .1rem solid black;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+    }
+
+    nav {
+        .banner {
+            background: url(../img/banner.jpg);
+            background-size:cover;
+            background-position-y: -23rem;
+            background-repeat: no-repeat;
+            width: 130rem;
+            height: 25rem;
+        }
+    }
+
+    main {
+        .main {
+            border: .1rem solid black;
+            
+            .planos {
+                border: .1rem solid black;
+                display: flex;
+                justify-content: space-around;
+            
+                .box {
+                    border: .1rem solid black;
+                    height: 10rem;
+                    width: 10rem;
+                }
+            }
+
+            .pesquisa {
+                border: .1rem solid black;
+                display: flex;
+                flex-direction: column;
+                
+                .tittle {
+                    border: .1rem solid black;
+                }
+            }
+
+            .resultado {
+                border: .1rem solid black;
+                .box {
+                    border: .1rem solid black;
+                    .box-l {
+                        border: .1rem solid black;
+                        .hour-s {
+                            border: .1rem solid black;
+                        }
+                        .hour-c {
+                            border: .1rem solid black;
+                        }
+                        .box-l-d {
+                            border: .1rem solid black;
+                        }
+                    }
+                    .box-r {
+                        border: .1rem solid black;
+                        .preco {
+                            border: .1rem solid black;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer {
+                border: .1rem solid black;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
 }
