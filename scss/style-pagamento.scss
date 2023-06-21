@@ -70,6 +70,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            box-shadow: .4rem .3rem .2rem .2rem grey;
 
             .tittle{
                 font-size: 1.3rem;
@@ -118,6 +119,7 @@ main {
             flex-direction: column;
             height: 35rem;
             width: 30rem;
+            box-shadow: .4rem .3rem .2rem .2rem grey;
               
             .tittle{
                 display: flex;
@@ -158,6 +160,7 @@ main {
             flex-direction: column;
             width: 35rem;
             height: 43rem;
+            box-shadow: .4rem .3rem .2rem .2rem grey;
 
             .tittle {
                 display: flex;
@@ -233,6 +236,7 @@ main {
             grid-area: aside;
             width: 30rem;
             height: 12rem;
+            box-shadow: .4rem .3rem .2rem .2rem grey;
 
             .tittle {
                 font-size: 1.5rem;
@@ -279,6 +283,7 @@ main {
             padding-left: 1rem;
             padding-top: .7rem;
             padding-bottom: .5rem;
+            box-shadow: .4rem .3rem .2rem .2rem grey;
         }
     }
 }

@@ -74,6 +74,7 @@ main .viagem .local {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 main .viagem .local .tittle {
   font-size: 1.3rem;
@@ -119,6 +120,7 @@ main .viagem .passageiro {
   flex-direction: column;
   height: 35rem;
   width: 30rem;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 main .viagem .passageiro .tittle {
   display: flex;
@@ -156,6 +158,7 @@ main .viagem .pagamento {
   flex-direction: column;
   width: 35rem;
   height: 43rem;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 main .viagem .pagamento .tittle {
   display: flex;
@@ -225,6 +228,7 @@ main .viagem .extrato {
   grid-area: aside;
   width: 30rem;
   height: 12rem;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 main .viagem .extrato .tittle {
   font-size: 1.5rem;
@@ -268,6 +272,7 @@ main .viagem .termos {
   padding-left: 1rem;
   padding-top: 0.7rem;
   padding-bottom: 0.5rem;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 
 footer {
