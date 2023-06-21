@@ -5,29 +5,32 @@
     display: grid;
     height: 100vh;
     width: 98.8vw;
-    grid-template-rows: 8rem 29rem 26rem 60rem;
+    grid-template-rows: 7rem 29rem 26rem;
     grid-template-areas: 
     'header'
     'nav'
+    'main'
     'main'
     'footer';
 
     header {
         grid-area: header;
         .header {
+            background: $second-color;
             display: flex;
             justify-content: space-between;
             
             .icon {
                 display: flex;
                 background:url(../img/Design\ sem\ nome\ \(27\).png);
-                width: 6rem;
+                width: 7rem;
                 height: 5rem;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position-x: -1.55rem;
                 margin-top: 1rem;
                 margin-left: 1rem;
+                margin-bottom: 1rem;
             }
             .accout {
                 margin-right: 5rem;
@@ -36,6 +39,7 @@
                 gap: 1rem;
                 align-items: center;
                 font-size: 1.5rem;
+                margin-bottom: 2rem;
             }
         }
     }
@@ -87,6 +91,7 @@
                     width: 30rem;
                     display: flex;
                     flex-direction: column;
+                        box-shadow: .4rem .3rem .2rem .2rem grey;
                     
                     .tittle {
                         border-bottom: .1rem solid black;
@@ -166,6 +171,7 @@
                 align-items: center;
                 flex-direction: column;
                 gap: 1rem;
+
                 
                 .box {
                     border: .1rem solid black;
@@ -173,6 +179,7 @@
                     justify-content: space-between;
                     align-items: center;
                     width: 100rem;
+                    box-shadow: .4rem .3rem .2rem .2rem grey;
                     .box-l {
                         display: flex;
                         gap:10rem ;
@@ -204,18 +211,73 @@
         }
     }
     
-    footer {
-        grid-area: footer;
-        .footer {
-            border:.1rem solid black;
-            .f-esq {
-                border: .1rem solid black;
+    .footer {
+        background: $second-color;
+        display: flex;
+        margin-top: 1rem;
+
+        .f-esq {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .img {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img:nth-child(2) {
+                    height: 4rem;
+                }
+
+                img:nth-child(1) {
+                    width: 7rem;
+                }
             }
-            .escrita {
-                border: .1rem solid black;
+
+            h6 {
+                font-weight: lighter;
+                color: $text-color;
             }
-            .redes-sociais {
-                border: .1rem solid black;
+        }
+        .f-dir {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            padding-right: 1rem;
+
+            a {
+                font-size: 2.5rem;
+                padding-right: 1rem;
+
+                .bxl-facebook-square {
+                    color: #1877f2;
+                }
+
+                .bxl-twitter {
+                    color: #1da1f2;
+                }
+
+                .bxl-youtube {
+                    color: #c4302b;
+                }
+
+                .bxl-instagram {
+                    color: #e35a91;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                color: $text-color;
             }
         }
     }

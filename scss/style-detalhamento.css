@@ -20,26 +20,28 @@ body {
   display: grid;
   height: 100vh;
   width: 98.8vw;
-  grid-template-rows: 8rem 29rem 26rem 60rem;
-  grid-template-areas: "header" "nav" "main" "footer";
+  grid-template-rows: 7rem 29rem 26rem;
+  grid-template-areas: "header" "nav" "main" "main" "footer";
 }
 .container header {
   grid-area: header;
 }
 .container header .header {
+  background: #0F393D;
   display: flex;
   justify-content: space-between;
 }
 .container header .header .icon {
   display: flex;
   background: url(../img/Design\ sem\ nome\ \(27\).png);
-  width: 6rem;
+  width: 7rem;
   height: 5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -1.55rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 .container header .header .accout {
   margin-right: 5rem;
@@ -48,6 +50,7 @@ body {
   gap: 1rem;
   align-items: center;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .container nav {
   grid-area: nav;
@@ -89,6 +92,7 @@ body {
   width: 30rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 .container main .main .planos .box .tittle {
   border-bottom: 0.1rem solid black;
@@ -167,6 +171,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100rem;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
 }
 .container main .main .resultado .box .box-l {
   display: flex;
@@ -194,18 +199,62 @@ body {
   display: flex;
   justify-content: center;
 }
-.container footer {
-  grid-area: footer;
+.container .footer {
+  background: #0F393D;
+  display: flex;
+  margin-top: 1rem;
 }
-.container footer .footer {
-  border: 0.1rem solid black;
+.container .footer .f-esq {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.container footer .footer .f-esq {
-  border: 0.1rem solid black;
+.container .footer .f-esq .img {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container footer .footer .escrita {
-  border: 0.1rem solid black;
+.container .footer .f-esq .img img:nth-child(2) {
+  height: 4rem;
 }
-.container footer .footer .redes-sociais {
-  border: 0.1rem solid black;
+.container .footer .f-esq .img img:nth-child(1) {
+  width: 7rem;
+}
+.container .footer .f-esq h6 {
+  font-weight: lighter;
+  color: white;
+}
+.container .footer .f-dir {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding-right: 1rem;
+}
+.container .footer .f-dir a {
+  font-size: 2.5rem;
+  padding-right: 1rem;
+}
+.container .footer .f-dir a .bxl-facebook-square {
+  color: #1877f2;
+}
+.container .footer .f-dir a .bxl-twitter {
+  color: #1da1f2;
+}
+.container .footer .f-dir a .bxl-youtube {
+  color: #c4302b;
+}
+.container .footer .f-dir a .bxl-instagram {
+  color: #e35a91;
+}
+.container .footer .f-dir span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
 }/*# sourceMappingURL=style-detalhamento.css.map */
