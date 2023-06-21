@@ -1,0 +1,126 @@
+@import '_variables';
+@import '_base';
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    grid-template-rows: 5rem 48rem 5rem;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    gap: 2rem;
+    header {
+        grid-area:header;
+        .top {
+            display:flex;
+            justify-content: space-between;                height: 7rem;
+
+            button {
+                font-size: 2rem;
+                border: none;
+                background: #fff;
+                padding-top: 2rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+
+                i {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'aside'
+        'main';
+        gap: 2rem;
+
+        .tittle {
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+        }
+        .main-top {
+            grid-area: nav;
+            display: flex;
+            justify-content: center;
+            gap: 8rem;
+            .box {
+                display: flex;
+                border-radius: 5rem;
+                width: 7rem;
+                height: 7rem;
+            }
+            
+            .box:nth-child(1) {
+                background: url(../img/fb_icon_325x325.png);
+                background-size: 7rem;
+                background-position: -0.1rem;
+            }
+            .box:nth-child(2) {
+                background: url(../img/Google.png); 
+                background-size: 7rem;
+                background-position: -0.1rem;
+            }
+            .box:nth-child(3) {
+                background: url(../img/outlook.png);
+                background-size: 6.5rem;
+                background-position: -0.2rem;
+                background-repeat: no-repeat;
+            }
+            .box:nth-child(4) {
+                background: url(../img/Logo_of_Twitter.svg.png);
+                background-size: 5.8rem;
+                background-position-y: 1.2rem;
+                background-position-x: .49rem;
+                background-repeat: no-repeat;
+            }
+        }
+        .tittle-center{
+            grid-area: aside;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .main-center {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            
+            input {
+                width: 50rem;
+                height: 4rem;
+                border-radius: 1rem;
+                padding-left: 2rem;
+            }
+        }
+    }
+    footer {
+        grid-area: footer;
+        .foot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                width: 30rem;
+                height: 4rem;
+                border-radius: 1rem;
+            }
+
+            h3 {
+                margin-top: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

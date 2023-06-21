@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Design_sem_nome__2_-removebg-preview.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/style-pagamento.css">
+    <title>Efetuando o Pagamento</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+            <div class="comeback"><button><i class="fa-solid fa-less-than"></i>  Voltar</button></div>
+            </div>
+        </header>
+        <nav>
+            <div class="banner">
+                <div class="background"></div>
+            </div>
+        </nav>
+        <main>
+            <div class="viagem">
+                <div class="local">
+                    <div class="tittle"><h1>Dados da Viagem</h1></div>
+                    <div class="info-local">
+                        <div class="to">
+                            <h6>Embarque</h6>
+                            <h4>Três Lagoas / MS</h4>
+                            <h5>22/jun, 19:30</h5>
+                        </div>
+                        <div class="from">
+                            <h6>Desembarque</h6>
+                            <h4>Angra dos Reis / RJ</h4>
+                            <h5>22/jun, 22:30</h5>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="b-left"><h5><i class="fa fa-chair"></i> Semi-leito</h5></div>
+                        <div class="b-right"><h5>Ver Intinerario</h5></div>
+                    </div>
+                </div>
+                
+                            <!-- Parte Pronta -->
+        
+                <div class="passageiro">
+                    <div class="tittle"><h1>Adicionar Passageiro</h1></div>
+                    <div class="info">
+                    <label for="input">Nome Completo </label>
+                    <input type="text" maxlength="2" placeholder="Insira o Nome Completo do Passageiro">
+                    <label for="number">Numero do RG</label>
+                    <input name="rg"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="9" placeholder="Número do RG"/>
+                    <label for="number">Numero do CPF</label>
+                    <input name="cpf"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="11" placeholder="Número do CPF"/>
+                    </div>
+                    <button>Confirmar Passageiro</button>
+                </div>
+                <div class="pagamento">
+                    <div class="tittle"><h1>Formas de Pagamento</h1></div>
+                    <div class="layout-box-pag">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="card">
+                        <label for="text">Nome do titular</label>
+                        <input type="text" name="" id="" placeholder="Insira o nome do titular">
+                        <label for="number">Número do cartão</label>
+                        <input name="card"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="16" placeholder="0000 0000 0000 0000"/>
+                        <label for="number">Valido até</label>
+                        <input name="date"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="6" placeholder="MM/AA"/>
+                        <label for="number">Código de segurança</label>
+                        <input name="CVV"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="3" placeholder="CVV"/>
+                    </div>
+                    <button>Confirmar</button>
+                </div>
+                <div class="extrato">
+                    <div class="tittle"><h1>Extrato</h1></div>
+                    <div class="info-ex">
+                        <div class="info-top">
+                            <h5>Valor de Ida</h5>
+                            <h5>R$ 900,27</h5>
+                        </div>
+                        <div class="info-down">
+                            <h5>Total</h5>
+                            <h5>R$ 900,27</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="termos">
+                    <h6>Ao Confirmar o pagamento, eu concordo com as diretrizes e regras da empresa.</h6>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button>Confirmar e pagar</button>
+        </footer>
+    </div>
+</body>
+</html>
