@@ -1,0 +1,15 @@
+$primary-color:#2FB1BD;
+$second-color:#0F393D;
+$text-color:#ffff;
+$box-color:#fff;
+$bg-color:#E8EEF0;
+$shadow-color:#DEDEDE;
+$hover:#F6A0A2;
+
+@mixin container {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: $bg-color;
+}
+
