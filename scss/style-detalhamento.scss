@@ -16,7 +16,7 @@
     header {
         grid-area: header;
         .header {
-            background: $second-color;
+            background: $primary-color;
             display: flex;
             justify-content: space-between;
             
@@ -86,15 +86,16 @@
                 justify-content: space-around;
             
                 .box {
-                    border: .1rem solid black;
+                    border: .1rem solid $border-color;
+                    border-radius: .5rem;
                     height: 18rem;
                     width: 30rem;
                     display: flex;
                     flex-direction: column;
-                        box-shadow: .4rem .3rem .2rem .2rem grey;
+                    box-shadow: .4rem .3rem .2rem .2rem $shadow-color;
                     
                     .tittle {
-                        border-bottom: .1rem solid black;
+                        border-bottom: .1rem solid $border-color;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
@@ -174,12 +175,12 @@
 
                 
                 .box {
-                    border: .1rem solid black;
+                    border: .1rem solid $border-color;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 100rem;
-                    box-shadow: .4rem .3rem .2rem .2rem grey;
+                    box-shadow: .4rem .3rem .2rem .2rem $shadow-color;
                     .box-l {
                         display: flex;
                         gap:10rem ;

@@ -86,8 +86,8 @@
                 border: .5rem solid $text-color;
 
                 &:hover {
-                    color: #000;
-                    border: .5rem solid #000;
+                    color: $border-color;
+                    border: .5rem solid $border-color;
                 }
             }
 

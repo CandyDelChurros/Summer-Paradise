@@ -94,8 +94,8 @@ body {
   border: 0.5rem solid white;
 }
 .nav .nav-box .nav-esq .close:hover {
-  color: #000;
-  border: 0.5rem solid #000;
+  color: #000000;
+  border: 0.5rem solid #000000;
 }
 .nav .nav-box .nav-esq h3 {
   font-size: 2.5rem;
