@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   list-style: none;
+  border: none;
 }
 
 html {
@@ -27,7 +28,7 @@ body {
   grid-area: header;
 }
 .container header .header {
-  background: #0F393D;
+  background: #2FB1BD;
   display: flex;
   justify-content: space-between;
 }
@@ -87,15 +88,16 @@ body {
   justify-content: space-around;
 }
 .container main .main .planos .box {
-  border: 0.1rem solid black;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
   height: 18rem;
   width: 30rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem #DEDEDE;
 }
 .container main .main .planos .box .tittle {
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid #000000;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -166,12 +168,12 @@ body {
   gap: 1rem;
 }
 .container main .main .resultado .box {
-  border: 0.1rem solid black;
+  border: 0.1rem solid #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100rem;
-  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem grey;
+  box-shadow: 0.4rem 0.3rem 0.2rem 0.2rem #DEDEDE;
 }
 .container main .main .resultado .box .box-l {
   display: flex;
