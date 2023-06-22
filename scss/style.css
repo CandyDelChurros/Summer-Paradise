@@ -239,6 +239,7 @@ body {
   height: 5rem;
   outline: none;
   border-radius: 50px;
+  border: none;
 }
 .main-index .tabela {
   width: 100%;
