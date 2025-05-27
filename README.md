@@ -1,3 +1,3 @@
 ﻿# Summer-Paradise
 
-Site de Viagem
+Site de Viagem feito como trabalho.
